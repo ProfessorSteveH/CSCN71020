@@ -1,0 +1,25 @@
+Unit tests
+
+1. Start with a solution having a project with separated components (your 
+     functions to test are in their own .h & .c files.
+2. Create new project of type "Native Unit Test Project"
+     a. project called "UnitTests"
+     b. Set this project to not use Precompiled Headers
+	   i. Project -> Properties -> C/C++ -> Precompiled Header
+           ii. Set to "Not unsing Precompiled Headers"
+     c. Header Files -> Add existing : Add the .h file of unit under test
+     d. Source Files -> Add existing : Add the .c file of unit under test
+     e. In UnitTests.cpp add:
+                extern "C" {
+	                #include "../Project1/functions.h"
+                }
+     f. Add a Test:
+		TEST_METHOD(REQ001)
+		{
+			int expected = 4;
+			int actual = add(2, 2);
+			Assert::AreEqual(expected, actual);
+		}
+3. Select Test -> Test Explorer 
+     a. Run All
+4. Add more tests :)
