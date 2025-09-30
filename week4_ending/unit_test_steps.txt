@@ -6,7 +6,7 @@ Unit tests
      a. project called "UnitTests"
      b. Set this project to not use Precompiled Headers
 	   i. Project -> Properties -> C/C++ -> Precompiled Header
-           ii. Set to "Not unsing Precompiled Headers"
+           ii. Set to "Not using Precompiled Headers"
      c. Header Files -> Add existing : Add the .h file of unit under test
      d. Source Files -> Add existing : Add the .c file of unit under test
      e. In UnitTests.cpp add:
