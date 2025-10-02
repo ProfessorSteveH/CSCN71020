@@ -1,0 +1,16 @@
+Now that we have a basic structure and understanding of unit tests, we can look at how we can use Test Driven Development (TDD) to grow our software capabilities.
+
+First, we will start with a mock-up of the requirements/features we need to have in our end product.  In this scenario, we have already reviewed the specification and laid out our design (we know that all the following features will be in our 'functions' module.
+
+REQ001 - basic integer addition (done)
+REQ002 - basic integer subtraction
+REQ003 - basic integer multiplication
+REQ004 - basic integer division
+REQ005 - basic integer modulus
+
+Now our steps, and for each feature/function:
+  1) define an interface for each feature
+  2) stub out the function (so our code compiles)
+  3) write our tests, run our tests (ensuring they all fail)
+  4) write code, run tests
+  5) repeat 4 until all tests pass.
